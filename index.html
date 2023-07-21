@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <meta http-equiv="X-UA-Compatiable" content="ie-edge">
+    <title>Javascript Quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    
+    <header>
+        <button class="button" id="highscore">View Highscores</button>
+        <h3 class="timer">Time:</h3>
+    </header>
+
+    <section id="intro" class="intro">
+        <div class="start-page">
+            <h1>Coding Quiz Challenge</h1>
+            <p>Try to answer the following code-related questions within the time limit.
+                Correct answeres are worth 7 points! Keep in mind that incorrect answers will
+                penalize your score by 2 points and your time by ten seconds. 
+            </p>
+            <button class="start-btn" id="start-quiz">Start Quiz</button>
+        </div>
+    </section>
+
+        <section id="questions-contain" class="questions-contain">
+            <div class="questions">
+                <div id="the-question">
+                    <div id="answers" class="answer-btn"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="all-done" class="all-done">
+            <div class="done">
+                <div id="score">
+                    <h1>All Done!</h1>
+                </div>
+                <form id="initals" class="initals">
+                    <input type="text" name="initals" id="text-input">
+                    <button class="start-btn" id="submit" type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="high-score" class="high-score">
+            <h1 class="highscores"></h1>
+            <ol id="hisghscore-list" class="score-list"></ol>
+            <div>
+                <button class="btn" id="go-back">Go back</button>
+                <button class="btn" id="clear">Clear Highscores</button>
+            </div>
+        </section>
+
+        <div class="correct" id="correct">
+            <h2>Correct :)!</h2>
+        </div>
+
+        <div class="wrong" id="wrong">
+            <h2>Wrong :( </h2>
+        </div>
+
+        <footer>
+            <p>Made with 🩵 by Joseph Teixeira</p>
+        </footer>
+        <script src="./assets/js/script.js"></script>
+</body>
+</html>
