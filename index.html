@@ -2,7 +2,7 @@
 <html lang="en-US"> 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatiable" content="ie-edge">
     <title>Javascript Quiz</title>
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -11,11 +11,11 @@
 <body>
     
     <header>
-        <button class="button" id="highscore">View Highscores</button>
-        <h3 class="timer">Time:</h3>
+        <button id="button">View Highscores</button>
+        <h3 class="timer" id="timer">Time:</h3>
     </header>
 
-    <section id="intro" class="intro">
+    <section id="intro" class="show"> <!--Show-->
         <div class="start-page">
             <h1>Coding Quiz Challenge</h1>
             <p>Try to answer the following code-related questions within the time limit.
@@ -26,7 +26,7 @@
         </div>
     </section>
 
-        <section id="questions-contain" class="questions-contain">
+        <section id="questions-contain" class="hide"> <!--hide-->
             <div class="questions">
                 <div id="the-question">
                     <div id="answers" class="answer-btn"></div>
@@ -34,19 +34,20 @@
             </div>
         </section>
 
-        <section id="all-done" class="all-done">
+        <section id="all-done" class="hide"> <!--end and hide-->
             <div class="done">
                 <div id="score">
                     <h1>All Done!</h1>
                 </div>
-                <form id="initals" class="initals">
+                <form id="initials-page" class="initials">
+                    <p>Enter Initals: </p>
                     <input type="text" name="initals" id="text-input">
                     <button class="start-btn" id="submit" type="submit">Submit</button>
                 </form>
             </div>
         </section>
 
-        <section id="high-score" class="high-score">
+        <section id="high-score" class="hide"> 
             <h1 class="highscores"></h1>
             <ol id="hisghscore-list" class="score-list"></ol>
             <div>
@@ -55,15 +56,15 @@
             </div>
         </section>
 
-        <div class="correct" id="correct">
+        <div class="hide" id="correct">
             <h2>Correct :)!</h2>
         </div>
 
-        <div class="wrong" id="wrong">
+        <div class="hide" id="wrong">
             <h2>Wrong :( </h2>
         </div>
 
-        <footer>
+        <footer id="footer">
             <p>Made with 🩵 by Joseph Teixeira</p>
         </footer>
         <script src="./assets/js/script.js"></script>
