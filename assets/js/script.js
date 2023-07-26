@@ -69,7 +69,7 @@ var startPage = function() {
 }
 
 var setTime = function() {
-    timeleft = 30;
+    timeleft = 60;
 
 
 var timecheck = setInterval(function() {
